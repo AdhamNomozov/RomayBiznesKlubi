@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Romay Biznes Klubi - Business Club in Termiz</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#4CAF50',secondary:'#2196F3'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+scroll-behavior: smooth;
+}
+.hero-section {
+  background-image: url('https://github.com/AdhamNomozov/Romay-biznes-klubi/blob/main/samo.jpg?raw=true');
+  background-size: cover;
+  background-position: center;
+}
+.hero-overlay {
+background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.6) 100%);
+}
+input:focus {
+outline: none;
+}
+.value-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.benefit-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.team-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body class="bg-white text-gray-800">
+<!-- Navigation -->
+<!-- Navigation -->
+<nav class="fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
+  <div class="container mx-auto px-6 py-3 flex items-center justify-between">
+  
+    <!-- Logo chapda -->
+  <div>
+<a href="#">
+  <img src="romay%20logo%2012.jpg" alt="Romay Logo" class="h-12 md:h-20 w-auto">
+</a>
+</div>
+    <!-- Menyu o'ngda (desktop) -->
+    <div class="hidden md:flex space-x-8 ml-auto">
+      <a href="#about" class="text-gray-700 hover:text-primary transition-colors">Biz haqimizda</a>
+      <a href="#format" class="text-gray-700 hover:text-primary transition-colors">Klub formati</a>
+      <a href="#requirements" class="text-gray-700 hover:text-primary transition-colors">Talablar</a>
+      <a href="#benefits" class="text-gray-700 hover:text-primary transition-colors">Afzalliklar</a>
+      <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Aloqa</a>
+    </div>
+    <!-- Mobil menyu tugmasi -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="w-10 h-10 flex items-center justify-center text-gray-700">
+        <i class="ri-menu-line ri-lg"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Mobil menyu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+    <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+      <a href="#about" class="text-gray-700 hover:text-primary transition-colors">Biz haqimizda</a>
+      <a href="#format" class="text-gray-700 hover:text-primary transition-colors">Klub formati</a>
+      <a href="#requirements" class="text-gray-700 hover:text-primary transition-colors">Talablar</a>
+      <a href="#benefits" class="text-gray-700 hover:text-primary transition-colors">Afzalliklar</a>
+      <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Aloqa</a>
+    </div>
+  </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-section min-h-screen flex items-center">
+<div class="hero-overlay w-full min-h-screen flex items-center">
+<div class="container mx-auto px-6 py-24 md:py-32">
+<div class="w-full md:w-3/5">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900">Romay biznes klubi</h1>
+<p class="text-xl md:text-2xl font-medium mb-6 text-gray-800">Birgalikda rivojlanamiz</p>
+<p class="text-lg mb-8 max-w-2xl text-gray-700">Surxondaryo tadbirkorlarini birlashtirib, biznesi va shaxsiy rivojlanishini yangi bosqichga olib chiquvchi biznes klub. <br>
+Biz bilan birgalikda rivojlanishni istasangiz, safimizga qo‘shiling!</p>
+<a href="#apply" class="inline-block bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 !rounded-button transition-all whitespace-nowrap">Ariza berish</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Klub haqida</h2>
+<div class="w-24 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h3 class="text-2xl font-semibold mb-4">Bizning maqsadimiz (Our mission)</h3>
+<p class="text-gray-700 mb-6">Romay biznes klubi — bu bir-biridan o‘rganadigan, tajriba almashadigan va birgalikda biznesini rivojlantiradigan tadbirkorlar uchun do‘stona va qo‘llab-quvvatlovchi muhit yaratishga qaratilgan hamjamiyatdir. Biz jamoaviy tafakkur va o‘zaro yordam kuchiga ishonamiz.</p>
+<h3 class="text-2xl font-semibold mb-4">Kelajakdagi tasavvurimiz (Our vision)</h3>
+<p class="text-gray-700"> 2025–2028-yillar davomida Romay biznes klubi — Surxondaryo viloyatidagi eng faol, natijador va jamoaviy ruhga asoslangan, doimiy rivojlanishga undovchi eng kuchli biznes hamjamiyat bo‘ladi. Har bir a’zo klubga kirgan kundan boshlab o‘zining A nuqtasi (hozirgi holati)dan B nuqtasi (maqsadli muvaffaqiyat darajasi)gacha aniq yo‘l xaritasiga ega bo‘ladi.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="value-card bg-white p-6 rounded shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-trophy-line text-primary ri-lg"></i>
+</div>
+<h4 class="text-xl font-semibold mb-2">Natijadorlik</h4>
+<p class="text-gray-600">A’zolarimiz va ularning bizneslari uchun o‘lchab bo‘ladigan real natijalarga erishishga e’tibor qaratamiz.</p>
+</div>
+<div class="value-card bg-white p-6 rounded shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-scales-3-line text-primary ri-lg"></i>
+</div>
+<h4 class="text-xl font-semibold mb-2">Hisobdorlik</h4>
+<p class="text-gray-600">Har bir ishtirokchi o‘z harakatlari uchun javobgar bo‘lishi, doimiy taraqqiyotga intilishi kerak.</p>
+</div>
+<div class="value-card bg-white p-6 rounded shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-team-line text-primary ri-lg"></i>
+</div>
+<h4 class="text-xl font-semibold mb-2">Hamkorlik</h4>
+<p class="text-gray-600">Biz birgalikda ishlash, tajriba almashish va umumiy maqsad sari harakat qilish kuchiga ishonamiz.</p>
+</div>
+<div class="value-card bg-white p-6 rounded shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-seedling-line text-primary ri-lg"></i>
+</div>
+<h4 class="text-xl font-semibold mb-2">Doimiy rivojlanish</h4>
+<p class="text-gray-600">Shaxsiy va kasbiy rivojlanishga doimiy intilamiz. Har oy o‘zimizni kechagidan kuchliroq qilishni maqsad qilamiz.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Club Format -->
+<section id="format" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Klub formati</h2>
+<p class="text-gray-700 max-w-3xl mx-auto">Tizimli yondashuvimiz har bir a’zoning ishtirokidan maksimal foyda olishini ta’minlaydi.</p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto">
+<i class="ri-calendar-2-line text-secondary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4 text-center">Rasmiy sessiyalar</h3>
+<p class="text-gray-700">Biz har oyda ikki marta tuzilgan reja asosida yig‘ilamiz. Har bir sessiya o‘sish, hamkorlik va amaliy natijaga erishish uchun aniq rejalashtiriladi.</p>
+</div>
+<div class="bg-white p-8 rounded shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto">
+<i class="ri-presentation-line text-secondary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4 text-center">Sessiya faoliyatlari</h3>
+<ul class="text-gray-700 space-y-2">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Kitob muhokamalari va bilimlar almashinuvi</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Biznesdagi muammolarini tahlil qilish va ularga birgalikda yechim topish - "Biznes razbor" formati</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Tajribali expertlar ishtirokidagi treninglar</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Jamoaviy chellenjlar va musobaqalar</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mt-1 mr-2"></i>
+<span>Networking — yangi tanishuvlar va hamkorliklar</span>
+</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded shadow-md">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto">
+<i class="ri-group-line text-secondary ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4 text-center">Ixtiyoriy tadbirlar</h3>
+<p class="text-gray-700 mb-4">Rasmiy sessiyalardan tashqari, do‘stona muhitni kuchaytirish va hayot sifatini yaxshilash uchun qo‘shimcha tadbirlar o‘tkazamiz:</p>
+<ul class="text-gray-700 space-y-2">
+<li class="flex items-start">
+<i class="ri-football-line text-primary mt-1 mr-2"></i>
+<span>Haftalik futbol o'yinlari</span>
+</li>
+<li class="flex items-start">
+<i class="ri-flight-takeoff-line text-primary mt-1 mr-2"></i>
+<span>Sayohatlar, ekskursiyalar va biznes safarlar</span>
+</li>
+<li class="flex items-start">
+<i class="ri-restaurant-line text-primary mt-1 mr-2"></i>
+<span>Do‘stona uchrashuvlar va tushliklar</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Requirements -->
+<section id="requirements" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">A'zolik talablari</h2>
+<p class="text-gray-700 max-w-3xl mx-auto">Faol va jips hamjamiyat shakllanishi uchun quyidagi mezonlarga mos keluvchi ishtirokchilar tanlab olinadi.</p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded shadow-md border border-gray-100">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-user-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Yosh talabi</h3>
+<p class="text-gray-700">A’zolar 18 yoshdan 50 yoshgacha bo‘lishi kerak. Bu faol, o‘sishga intiluvchi tadbirkorlarni jamlashga xizmat qiladi.</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md border border-gray-100">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-store-2-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Biznes egalari</h3>
+<p class="text-gray-700">Nomzod biznes egasi (yoki hammuassisi) bo‘lishi kerak va hozirda faoliyat yuritayotgan bo‘lishi lozim.</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md border border-gray-100">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-calendar-check-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Doimiy qatnashuv majburiyati</h3>
+<p class="text-gray-700">Har bir a’zo rasmiy sessiyalarda muntazam qatnashishga va faol muhokamalarda ishtirok etishga tayyor bo‘lishi shart.</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md border border-gray-100">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-mental-health-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Rivojlanishga kuchli istak</h3>
+<p class="text-gray-700">Klub o‘z ustida ishlashga, yangiliklarni o‘rganishga va shaxsiy rivojlanishga intiladigan nomzodlarni qabul qiladi.</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md border border-gray-100">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-exchange-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Bilim va tajriba ulashish</h3>
+<p class="text-gray-700">A’zolar o‘z tajriba va bilimlarini ochiq, halol va yordamchi ruhda boshqa klubdoshlar bilan bo‘lishishga tayyor bo‘lishi kerak.</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md border border-gray-100">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4">
+<i class="ri-coin-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Klubga a'zolik badali</h3>
+<p class="text-gray-700">Har oyda 200 000 so‘m miqdorida a’zolik badali to‘lanadi. Bu klubning ofis ijarasi, kommunal to'lovlari va boshqa xarajatlarini qoplash hamda ishtirokchi mas’uliyatini mustahkamlashga xizmat qiladi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits -->
+<section id="benefits" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Klub afzalliklari</h2>
+<p class="text-gray-700 max-w-3xl mx-auto">Bizning klubga a’zo bo‘lish orqali siz biznesingizni rivojlantirish va tadbirkor sifatida o‘sishingiz uchun keng imkoniyatlarga ega bo‘lasiz.</p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="benefit-card bg-white p-6 rounded shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mb-4">
+<i class="ri-global-line text-secondary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Kuchli networking</h3>
+<p class="text-gray-700">Fikrdosh tadbirkorlar bilan aloqalar o‘rnating, hamkorliklar yarating va kasbiy tarmog‘ingizni kengaytiring.</p>
+</div>
+<div class="benefit-card bg-white p-6 rounded shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mb-4">
+<i class="ri-user-voice-line text-secondary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Tajribali murabbiylardan maslahat</h3>
+<p class="text-gray-700">Sessiyalar davomida soha mutaxassislari va tajribali tadbirkorlardan amaliy maslahat va yo‘l-yo‘riqlar oling.</p>
+</div>
+<div class="benefit-card bg-white p-6 rounded shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mb-4">
+<i class="ri-team-line text-secondary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Hisobdorlik guruhlari</h3>
+<p class="text-gray-700">Maqsadlaringiz va vazifalaringizga sodiq qolishingiz uchun sizni kuzatib boruvchi kichik guruhlar bilan ishlang.</p>
+</div>
+<div class="benefit-card bg-white p-6 rounded shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mb-4">
+<i class="ri-lightbulb-line text-secondary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Ko‘nikmalarni rivojlantirish</h3>
+<p class="text-gray-700">Treninglar, seminarlar va bilim almashish orqali biznes ko‘nikmalaringizni mustahkamlang.</p>
+</div>
+<div class="benefit-card bg-white p-6 rounded shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mb-4">
+<i class="ri-trophy-line text-secondary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Sog‘lom raqobat</h3>
+<p class="text-gray-700">Do‘stona muhitda o‘tkaziladigan klubning ichki musobaqalarida ishtirok eting va natijadorligingizni oshiring.</p>
+</div>
+<div class="benefit-card bg-white p-6 rounded shadow-md transition-all duration-300">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full mb-4">
+<i class="ri-lock-line text-secondary ri-lg"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Yopiq hamjamiyat</h3>
+<p class="text-gray-700">O‘z ustida doimiy ishlaydigan va yuqori maqsadlarga harakat qiladigan tadbirkorlar muhitiga qo‘shiling.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section id="team" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Klub boshqaruv kengashi</h2>
+<p class="text-gray-700 max-w-3xl mx-auto">Romay biznes klubini tashkil etgan va uni samarali boshqarayotgan fidokor insonlar bilan tanishing.</p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-12 max-w-4xl mx-auto">
+<div class="team-card bg-white p-6 rounded shadow-md border border-gray-100 flex flex-col items-center transition-all duration-300">
+<div class="w-48 h-48 rounded-full overflow-hidden mb-6">
+<img src="https://github.com/AdhamNomozov/Romay-biznes-klubi/blob/main/Mirzayev_LE_upscale_balanced_x4.jpg?raw=true" 
+     alt="Rahmatulla Mirzayev" 
+     class="w-48 h-48 rounded-full object-cover mb-6">
+</div>
+<h3 class="text-xl font-semibold mb-1">Rahmatulla Mirzayev</h3>
+<p class="text-gray-600 mb-4">Klub direktori va asoschisi</p>
+<p class="text-gray-700 text-center">20 yildan ortiq tadbirkorlik va boshqaruv tajribasiga ega. 
+EPA, PIT, Polwon, Evita, CAMO kompaniyalarining Surxondaryodagi rasmiy hamkori. Romay brendi asoschisi</p>
+</div>
+<div class="team-card bg-white p-6 rounded shadow-md border border-gray-100 flex flex-col items-center transition-all duration-300">
+<div class="w-48 h-48 rounded-full overflow-hidden mb-6">
+<img src="https://github.com/AdhamNomozov/Romay-biznes-klubi/blob/main/AdhamNomozov.jpeg?raw=true" 
+     alt="Adham Nomozov" 
+     class="w-48 h-48 rounded-full object-cover mb-6">
+</div>
+<h3 class="text-xl font-semibold mb-1">Adham Nomozov</h3>
+<p class="text-gray-600 mb-4">Koordinator</p>
+<p class="text-gray-700 text-center">Klubning kundalik faoliyatini boshqaradi, sessiyalarni rejalashtiradi va har bir a’zo klubdan maksimal foyda olishini ta’minlaydi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Apply Section -->
+<section id="apply" class="py-16 bg-primary">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Romay biznes klubiga qo‘shilishga tayyormisiz?</h2>
+<p class="text-white text-lg mb-8 max-w-2xl mx-auto">Biznesingizni yangi bosqichga olib chiqish va faol tadbirkorlar jamiyatining bir qismiga aylanish uchun ilk qadamingizni hoziroq tashlang.</p>
+<a href="https://forms.gle/S5xiwqDXYFu9bqAh9" target="_blank" class="inline-block bg-white hover:bg-gray-100 text-primary font-semibold py-3 px-8 !rounded-button transition-all whitespace-nowrap">Ariza berish</a>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Biz bilan bog‘laning</h2>
+<p class="text-gray-700 max-w-3xl mx-auto">Klub haqida savollaringiz bormi? Quyidagi usullardan birini tanlab, biz bilan bog‘lanishingiz mumkin.</p>
+<div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+<div class="bg-white p-6 rounded shadow-md text-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4 mx-auto">
+<i class="ri-phone-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Telefon</h3>
+<p class="text-gray-700">+998 907462200</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md text-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4 mx-auto">
+<i class="ri-mail-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Elektron pochta</h3>
+<p class="text-gray-700">adhamnomozov93@gmail.com</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md text-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4 mx-auto">
+<i class="ri-telegram-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Telegram</h3>
+<a href="https://t.me/romaybiznes" class="text-primary hover:underline">@adham_nomozov</a>
+</div>
+<div class="bg-white p-6 rounded shadow-md text-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-4 mx-auto">
+<i class="ri-map-pin-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Manzil</h3>
+<p class="text-gray-700">Termiz shahri, Surxondaryo</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<div class="font-['Roboto'] text-2xl text-white mb-2">Romay biznes klubi</div>
+<p class="text-gray-400">Birgalikda rivojlanamiz, birgalikda muvaffaqiyatga erishamiz</p>
+</div>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+<i class="ri-instagram-line text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full transition-colors">
+<i class="ri-telegram-fill text-white"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Romay biznes klubi. Barcha huquqlar himoyalangan.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+menuToggle.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+if (mobileMenu.classList.contains('hidden')) {
+menuToggle.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+} else {
+menuToggle.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+}
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+menuToggle.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
